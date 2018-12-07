@@ -90,6 +90,18 @@
    Component: bootstrap-reset.less
  ========================================================================== */
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic);
+.main-content{
+  width:80%;
+  margin:auto;
+}
+
+.table >tbody> tr
+{
+  height:80px;
+}
+.table > tbody > tr > td{
+  border-top:2px dotted #eee;
+}
 .glyphicon {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -175,6 +187,9 @@ hr {
 @media only screen and (min-width: 768px) {
   .jumbotron {
     padding: 30px 15px;
+  }
+  .table{
+    overflow: hidden;
   }
 }
 .nav-tabs > li > a {
