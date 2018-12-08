@@ -293,9 +293,255 @@
           </div>
           <div class="col-lg-8">
             <div class="gold-frame"><div id="myDiv"></div></div>
+            <div>
+              <h3>Open Order (<span class="gold">0</span>)</h3>
+              <div class="table-responsive grey-border">
+                <table class="table">
+                  <thead class="grey grey-border grey-back">
+                    <tr>
+                      <th class=" grey-border">Date</th>
+                      <th class=" grey-border">Pair</th>
+                      <th class=" grey-border">Type</th>
+                      <th class=" grey-border">Side</th>
+                      <th class=" grey-border">Price</th>
+                      <th class=" grey-border">Amount</th>
+                      <th class=" grey-border">Filted</th>
+                      <th class=" grey-border">Total</th>
+                      <th class=" grey-border">Trigger Condition</th>
+                      <th class=" grey-border">Cancel all</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="grey-border grey-back">
+                      <td colspan="10" style="padding:20px 31%; color:black;">
+                        You have no open order right now
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-lg-3"></div>
+        <div class="col-lg-3">
+            <div class="gold-frame">
+                <div class="tab grey-back
+                ">
+                        <button
+                          class="tablinks a"
+                          onclick="openCity(event, 'London')"
+                          id="defaultOpen"
+                        >
+                          AMC
+                        </button>
+                        <button class="tablinks a" onclick="openCity(event, 'Paris')">
+                          BTC
+                        </button>
+                        <button class="tablinks a" onclick="openCity(event, 'Tokyo')">
+                          <span style="color:goldenrod">BTC ETH</span>
+                        </button>
+                        <button class="tablinks a" onclick="openCity(event, 'Tokyo')">
+                          USDT
+                        </button>
+                        <button class="tablinks a" onclick="openCity(event, 'Tokyo')" style="float:right">
+                          Favourites
+                        </button>
+                </div>
+              
+                      <!-- Tab content -->
+                      <div id="London" class="tabcontent gold-frame">
+                        <div class="table-responsive table-bordered">
+                          <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Pair</th>
+                                    <th>Price</th>                         
+                                    <th>Change</th>                     
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                          
+                            </tbody>
+                        </table>
+                        </div>
+                      </div>
+              
+                      <div id="Paris" class="tabcontent gold-frame">
+                        <div class="table-responsive table-bordered">
+                          <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Pair</th>
+                                    <th>Price</th>                         
+                                    <th>Change</th>                     
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                          
+                            </tbody>
+                        </table>
+                        </div>
+                      </div>
+              
+                      <div id="Tokyo" class="tabcontent gold-frame">
+                        <div class="table-responsive table-bordered">
+                          <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Pair</th>
+                                    <th>Price</th>                         
+                                    <th>Change</th>                     
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                <tr>
+                                    <td>xxxxxx</td>
+                                    <td><span class="red">xxxxxx</span></td>
+                                    <td><span class="green">xxxx</span></td>
+                                </tr>
+                                          
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-lg-12">
+                    <h4 style="float:left">VIP</h4>
+                    <p  style="float:right; margin-top:10px">Fee: Taker (xxxx)/Maker(xxxxx)</p>
+                </div>
+                <div class="gold-frame">
+                        <div class="tab grey-back
+                        ">
+                                <button
+                                  class="tablinks b"
+                                  onclick="openVIP(event, 'a')"
+                                  id="defaultOpen"
+                                >
+                                  Limit
+                                </button>
+                                <button class="tablinks b" onclick="openVIP(event, 'b')">
+                                  Market
+                                </button>
+                                <button class="tablinks b" onclick="openVIP(event, 'c')">
+                                    Stop-Limit
+                                </button>
+                             
+                        </div>
+                      
+                              <!-- Tab content -->
+                        <div id="a" class="tabcontent gold-frame">
+                           <form class="form-horizontal">
+                           <div class="form-group">
+                              <label class="col-lg-2 control-label">Email</label>
+                              <div class="col-lg-10">
+                                 <input class="form-control" type="email" placeholder="Email">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <label class="col-lg-2 control-label">Password</label>
+                              <div class="col-lg-10">
+                                 <input class="form-control" type="password" placeholder="Password">
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-lg-offset-2 col-lg-10">
+                                 <div class="checkbox c-checkbox">
+                                    <label>
+                                       <input type="checkbox" checked="">
+                                       <span class="fa fa-check"></span>Remember me</label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form-group">
+                              <div class="col-lg-offset-2 col-lg-10">
+                                 <button class="btn btn-sm btn-default" type="submit">Sign in</button>
+                              </div>
+                           </div>
+                        </form>    
+                        </div>
+                      
+                        <div id="b" class="tabcontent gold-frame">
+                                
+                        </div>
+                      
+                        <div id="c" class="tabcontent gold-frame">
+                               
+                        </div>
+                </div>
+            </div>
+
+        </div>
       </div>
     </div>
 
@@ -466,5 +712,53 @@
         }
       );
     </script>
+
+<script>
+        function openCity(evt, name) {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+  
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+  
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+  
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(name).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>
+      <script>
+        document.getElementById("defaultOpen").click();
+      </script>
+      <script>
+            function openVIP(evt, cityName) {
+              // Declare all variables
+              var i, tabcontent, tablinks;
+      
+              // Get all elements with class="tabcontent" and hide them
+              tabcontent = document.getElementsByClassName("tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+      
+              // Get all elements with class="tablinks" and remove the class "active"
+              tablinks = document.getElementsByClassName("tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+      
+              // Show the current tab, and add an "active" class to the button that opened the tab
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+          </script>
   </body>
 </html>
