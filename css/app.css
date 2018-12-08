@@ -109,8 +109,23 @@ a {
 }
 .table > tbody > tr > td{
   border-top:2px dotted #eee;
+  align:center;
 }
 
+.table >tbody> tr
+{
+  height:10px;
+}
+
+.table-trade >tbody> tr >td:nth-child(1)
+{
+  color:#ea018c;
+}
+
+.table-trade1 >tbody> tr >td:nth-child(1)
+{
+  color:#8fc53d;
+}
 .tab {
   overflow: hidden;
   border: 1px solid #fff;
@@ -126,6 +141,76 @@ a {
   cursor: pointer;
   padding: 14px 16px;
   transition: 0.3s;
+}
+
+.trade-title{
+  display: inline-flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.table-frame
+{
+  border: 1px solid #e2b564;
+  border-top:none;
+  padding:10px;
+  margin-bottom:20px;
+}
+
+.order-b{
+  padding:10px 20px;
+  width:100%;
+  color:white;
+  background:#6fa4d8;
+  border: 2px solid #4f59a6;
+}
+
+.table-title
+{
+  width:100%;
+  display: inline-flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.header-item
+{
+  margin: 0 20px;
+}
+
+.gold-frame
+{
+  border: 1px solid #e2b564;
+}
+
+.bold{
+  font-weight: bold;
+}
+.grey-back
+{
+  background:#f3f3f3;
+}
+.grey
+{
+  color:#cbcbcb;
+}
+.dark-grey
+{
+  color:#5f5f5f;
+}
+
+.green{
+  color:#8fc53d;
+}
+.red{
+  color:#ea018c;
+}
+
+.gold
+{
+  color:#e2b564;
 }
 
 /* Change background color of buttons on hover */
@@ -6070,6 +6155,14 @@ div.dt-button-info > div {
 .table > thead > tr > th {
   padding: 14px 8px;
   color: #888;
+}
+.table-trade > tbody > tr > td{
+  padding:0 10px;
+  
+  }
+.table-trade1 > tbody > tr > td{
+  padding: 0 10px;
+ 
 }
 .table > tbody > tr > td {
   vertical-align: middle;
