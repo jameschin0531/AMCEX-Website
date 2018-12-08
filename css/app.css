@@ -90,9 +90,17 @@
    Component: bootstrap-reset.less
  ========================================================================== */
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,400italic);
+a {
+  color: #f7a946;
+  text-decoration: none;
+}
 .main-content{
   width:80%;
   margin:auto;
+}
+.risk-item
+{
+  padding:20px;
 }
 
 .table >tbody> tr
@@ -101,6 +109,63 @@
 }
 .table > tbody > tr > td{
   border-top:2px dotted #eee;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #fff;
+ 
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: 2px solid #ebebed;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 2px solid #ebebed;
+  
+}
+.table span{
+  color:#e31290;
+}
+footer{
+  background:#1d1d1d;
+  padding:20px;
+}
+.footerlink
+{
+  padding: 30px 0 0 0 ;
+}
+footer p{
+  margin-top:20px;
+}
+.sociallink
+{
+  padding: 20px 0;
+}
+footer a{
+  color:#868589;
+  margin: 0 10px;
 }
 .glyphicon {
   display: inline-block;
@@ -267,6 +332,11 @@ fieldset .form-group {
   input[type="password"] {
     -webkit-appearance: none;
   }
+
+  .nav-wrapper .nav > li
+  {
+    float:right;
+  }
 }
 .table > thead > tr > th {
   border-bottom-width: 1px;
@@ -380,7 +450,7 @@ body {
   width: 100%;
   height: auto;
   min-height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .wrapper.ng-leave {
   display: none;
@@ -608,7 +678,7 @@ body {
 @media only screen and (min-width: 768px) {
   .aside-collapsed .wrapper > section,
   .aside-collapsed .wrapper > footer {
-    margin-left: 70px;
+    
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1041,17 +1111,64 @@ _:-ms-lang(x),
   position: relative;
 }
 
+.box
+{
+  height:120px;
+  width:250px;
+  background-color: #2d2b2c;
+  margin:25px;
+}
+.box-b
+{
+  height:120px;
+  width:250px;
+  margin:10px;
+}
+.dashboard-a
+{
+  background-color:#131313;
+  display: inline-flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.dashboard-b
+{
+  
+  display: inline-flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.banner
+{
+  padding:10px 30px;
+  background-color: #272727;
+  display: inline-flex;
+  flex-direction: row ;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+.info
+{
+  color: #838487;
+  margin: 0px 30px;
+}
+.info span{
+  margin-left:20px;
+}
+
 .right-card
 {
   padding:30px;
 }
 .upper-card{
-  padding:20px;
+  padding:80px 0;
   height:50%;
   clear:both;
 }
 .lower-card{
-  padding:20px;
+  padding:80px 0;
   height:50%;
   clear:both;
 }
@@ -1132,6 +1249,7 @@ _:-ms-lang(x),
   .topnavbar .navbar-text {
     margin: 10px;
   }
+
 }
 @media only screen and (max-width: 767px) {
   .sidebar-toggle {
