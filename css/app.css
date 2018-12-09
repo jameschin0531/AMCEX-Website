@@ -258,7 +258,6 @@ a {
 
 .gold-frame-c {
   border: 2px solid #e2b564;
- 
   border-radius: 20px;
 }
 
@@ -7666,6 +7665,10 @@ body .select2-container--bootstrap .select2-selection--multiple {
   width: 350px;
   left: auto;
   right: 60px;
+}
+.center
+{
+  text-align:center !important;
 }
 .alerts:hover .alert .close {
   opacity: 1;
