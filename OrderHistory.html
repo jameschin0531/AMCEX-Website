@@ -8,7 +8,7 @@
     <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
     <title>Order History</title>
     <!-- =============== VENDOR STYLES ===============-->
-    <!-- FONT AWESOME--> 
+    <!-- FONT AWESOME-->
     <link rel="stylesheet" href="/vendor/fontawesome/css/font-awesome.min.css">
     <!-- SIMPLE LINE ICONS-->
     <link rel="stylesheet" href="/vendor/simple-line-icons/css/simple-line-icons.css">
@@ -24,9 +24,7 @@
     <!-- =============== APP STYLES ===============-->
     <link rel="stylesheet" href="css/app.css" id="maincss">
     <!-- =============== DATE PICKER STLES ===============-->
-    <link rel="stylesheet" href="/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css">    
-    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="awesome-bootstrap-checkbox.css"/>
+    <link rel="stylesheet" href="/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css">
 </head>
 
 
@@ -34,266 +32,210 @@
 
     <div class="wrapper">
         <header class="topnavbar-wrapper">
-        <!-- START Top Navbar -->
-        <nav class="navbar topnavbar" role="navigation">
-          <!-- START Nav wrapper -->
-          <div class="nav-wrapper">
-            <!-- START Left navbar -->
+            <!-- START Top Navbar -->
+            <nav class="navbar topnavbar" role="navigation">
+                <!-- START Nav wrapper -->
+                <div class="nav-wrapper">
+                    <!-- START Left navbar -->
 
-            <ul class="nav navbar-nav">
-              <li>
-                <div class="brand-logo">
-                  <img
-                    class="img-responsive"
-                    src="asset/Logo/logo-01.png"
-                    style="height:30px;width:80x; margin: 10px"
-                    alt="App Logo"
-                  />
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <div class="brand-logo">
+                                <img class="img-responsive" src="asset/Logo/logo-01.png" style="height:30px;width:80x; margin: 10px"
+                                    alt="App Logo" />
+                            </div>
+                        </li>
+
+                        <li><a href="#">Exchange</a></li>
+                    </ul>
+                    <!-- END Left navbar -->
+                    <!-- START Right Navbar -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- Search icon -->
+                        <li>
+                            <a href="#">
+                                <p>Funds</p>
+                            </a>
+                        </li>
+                        <!-- Fullscreen (only desktops) -->
+                        <li>
+                            <a href="#">
+                                <p>Orders</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Orders</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Join Us</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Support</p>
+                            </a>
+                        </li>
+                        <!-- START Alert menu -->
+                        <li class="dropdown dropdown-list">
+                            <a id="user-block-toggle" href="#user-block" data-toggle="collapse">
+                                <em class="icon-user"></em>
+                            </a>
+                        </li>
+                        <!-- END Alert menu -->
+                        <!-- START Offsidebar button -->
+                        <li>
+                            <a href="#" data-toggle-state="offsidebar-open" data-no-persist="true">
+                                <span>English</span>
+                            </a>
+                        </li>
+                        <!-- END Offsidebar menu -->
+                    </ul>
+                    <!-- END Right Navbar -->
                 </div>
-              </li>
-
-              <li><a href="#">Exchange</a></li>
-            </ul>
-            <!-- END Left navbar -->
-            <!-- START Right Navbar -->
-            <ul class="nav navbar-nav navbar-right">
-              <!-- Search icon -->
-              <li>
-                <a href="#"> <p>Funds</p> </a>
-              </li>
-              <!-- Fullscreen (only desktops) -->
-              <li>
-                <a href="#"> <p>Orders</p> </a>
-              </li>
-              <li>
-                <a href="#"> <p>Orders</p> </a>
-              </li>
-              <li>
-                <a href="#"> <p>Join Us</p> </a>
-              </li>
-              <li>
-                <a href="#"> <p>Support</p> </a>
-              </li>
-              <!-- START Alert menu -->
-              <li class="dropdown dropdown-list">
-                <a
-                  id="user-block-toggle"
-                  href="#user-block"
-                  data-toggle="collapse"
-                >
-                  <em class="icon-user"></em>
-                </a>
-              </li>
-              <!-- END Alert menu -->
-              <!-- START Offsidebar button -->
-              <li>
-                <a
-                  href="#"
-                  data-toggle-state="offsidebar-open"
-                  data-no-persist="true"
-                >
-                  <span>English</span>
-                </a>
-              </li>
-              <!-- END Offsidebar menu -->
-            </ul>
-            <!-- END Right Navbar -->
-          </div>
-          <!-- END Nav wrapper -->
-        </nav>
-        <!-- END Top Navbar -->
-      </header>
-        
-
+                <!-- END Nav wrapper -->
+            </nav>
+            <!-- END Top Navbar -->
+        </header>
 
         <div class="col-lg-12">
             <label style="font-size: 3vh">Order History</label>
-
             <br />
             <br />
 
-            <div class="panel panel-default">
+            <div style="border:none !important">
+                <div class="col-lg-9">
+                    <div class="trade-h-label">
 
-                <div class="panel-body">
-                    <div class="table-responsive">
-                        <div id="datatable3_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
-
-                            <div class="form-group">
-                                <div class="box">
-                                    <label class="control-label">Date:</label>
-
-                                    <div class='input-group date' id='datetimepicker1'>
-                                        <input type='text' class="form-control" />
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                                        </span>
-                                    </div>
-                                    <label class="control-label"> to </label>
-
-                                    <div class='input-group date' id='datetimepicker2'>
-                                        <input type='text' class="form-control" />
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                                        </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="form-group">
-                                <div class="box">
-                                    <label class="control-label">Pair:</label>
-                                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Coin">
-
-                                    <label class="control-label"> or </label>
-
-                                    <select class="form-control" id="sel1">
-                                        <option>All</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="box">
-
-                                    <label class="control-label"> Side: </label>
-
-                                    <select class="form-control" id="sel1">
-                                        <option>All</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-
-                            </div>
-
-                            <div class="form-group">
-                                <div class="box">
-                                    <button type="button" class="btn btn-warning">Search</button>
-                                    <button type="button" class="btn btn-default">Reset</button>
-
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="box">
-                                        <div class="checkbox">
-                                            <input type="checkbox" id="checkbox1">
-                                            <label for="checkbox1">
-                                                Check me out
-                                            </label>
-                                        </div>
-                                </div>
-                            </div>
-
-
-                            <div class="box" style="float: right">
-                                <label class="control-label"><a href="#" style="color: black"><u>Export
-                                            Complete Order History</u></a></label>
-                                <a href="#"><img src="asset\14. Order history\order history elements-07.png" alt="Export"
-                                        style="width:20px;height:20px;"></a>
+                        <div class="box">
+                            <label class="control-label">Date:</label>
+                        </div>
+                        <div class="box">
+                            <div class='input-group date' id='datetimepicker1'>
+                                <input type='text' class="form-control " />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
                             </div>
                         </div>
 
-
-                        <br />
-
-
-                        <!-- START table-responsive-->
-                        <div class="table-responsive">
-                            <table class="table limittable" style="border: 2px solid #EED2A7">
-                                <thead style="background-color: #F3F3F3">
-                                    <tr>
-                                        <th>Date</th>
-                                        <th>Pair</th>
-                                        <th>Type</th>
-                                        <th>Side</th>
-                                        <th>Average</th>
-                                        <th>Price</th>
-                                        <th>Filled</th>
-                                        <th>Amount</th>
-                                        <th>Total</th>
-                                        <th>Trigger Conditions</th>
-                                        <th>Status</th>
-                                        <th>Operation</th>
-                                    </tr>
-                                </thead>                             
-                            </table>
+                        <div class="box">
+                            <label class="control-label"> to </label>
+                        </div>
+                        <div class="box">
+                            <div class='input-group date' id='datetimepicker2'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
                         </div>
 
-                        
-                        <div class="NoRecordFoundDIV">
-                            <img src="asset\15. Trade history\trade history elements-08.png" alt="Export"
-                                style="width:80px;height:80px">
-                            <p><label style="color: grey">You have no order history</label> </p>
-                        </div>  
+                        <div class="box">
+                            <label class="control-label">Pair:</label>
+                        </div>
+                        <div class="box">
+                            <input type="text" class="form-control" name="lname" id="lname" placeholder="Coin">
+                        </div>
+                        <div class="box">
+                            <label class="control-label"> or </label>
+                        </div>
+                        <div class="box">
+                            <select class="form-control" id="sel1">
+                                <option>All</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+
+                        <div class="box">
+                            <label class="control-label"> Side: </label>
+                        </div>
+                        <div class="box">
+                            <select class="form-control" id="sel1">
+                                <option>All</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="box">
+                            <button type="button" class="btn btn-warning no-r">Search</button>
+                        </div>
+                        <div class="box">
+                            <button type="button" class="btn btn-default">Reset</button>
+                        </div>
                     </div>
                 </div>
+                <div class="col-lg-3">
+                    <div class="box" style="float:right">
+                        <label class="control-label"><a href="#" style="color: #595959;"><u>ExportComplete Trade
+                                    History</u></a>
+                        </label>
+                        <a href="#"><img src="asset\15. Trade history\trade history elements-07.png" alt="Export" style="width:20px;height:20px;"></a>
+                    </div>
+                </div>
+            </div>
+            <br />
+
+            <!-- START table-responsive-->
+            <div>
+                <table class="table limittable" style="border: 2px solid #EED2A7">
+                    <thead style="background-color: #F3F3F3">
+                        <tr>
+                            <th>Date</th>
+                            <th>Pair</th>
+                            <th>Type</th>
+                            <th>Side</th>
+                            <th>Average</th>
+                            <th>Price</th>
+                            <th>Filled</th>
+                            <th>Amount</th>
+                            <th>Total</th>
+                            <th>Trigger Conditions</th>
+                            <th>Status</th>
+                            <th>Operation</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div class="NoRecordFoundDIV">
+                <img src="asset\15. Trade history\trade history elements-08.png" alt="Export" style="width:80px;height:80px">
+                <p><label style="color: grey">You have no trade history</label> </p>
             </div>
         </div>
     </div>
     </div>
+
 </body>
 
 <footer>
-        <div class="row" style="border-bottom:2px solid #3a3a3c;">
-          <div style="float:left" class="sociallink">
+    <div class="row" style="border-bottom:2px solid #3a3a3c;">
+        <div style="float:left" class="sociallink">
             <a>About</a> <a>Terms</a> <a>Privacy</a> <a>Fees</a> <a>Contact</a>
             <a>API</a> <a>Appy to List</a> <a>Download</a>
-          </div>
-          <div style="float:right">
-            <img
-              src="asset/Footer/footer-03.png"
-              style="height:20px;width:20x; margin: 10px"
-              alt="App Logo"
-            />
-            <img
-              src="asset/Footer/footer-04.png"
-              style="height:20px;width:20x; margin: 10px"
-              alt="App Logo"
-            />
-            <img
-              src="asset/Footer/footer-05.png"
-              style="height:20px;width:20x; margin: 10px"
-              alt="App Logo"
-            />
-            <img
-              src="asset/Footer/footer-06.png"
-              style="height:20px;width:20x; margin: 10px"
-              alt="App Logo"
-            />
-            <img
-              src="asset/Footer/footer-07.png"
-              style="height:20px;width:20x; margin: 10px"
-              alt="App Logo"
-            />
-            <img
-              src="asset/Footer/footer-08.png"
-              style="height:20px;width:20x; margin: 10px"
-              alt="App Logo"
-            />
-            <img
-              src="asset/Footer/footer-09.png"
-              style="height:20px;width:20x; margin: 10px"
-              alt="App Logo"
-            />
-            <img
-              src="asset/Footer/footer-10.png"
-              style="height:20px;width:20x; margin: 10px"
-              alt="App Logo"
-            />
-            <img
-              src="asset/Footer/footer-11.png"
-              style="height:20px;width:20x; margin: 10px"
-              alt="App Logo"
-            />
-          </div>
         </div>
-        <p>©2017 - 2018 Amcex. All rights reserved</p>
-      </footer>
+        <div style="float:right">
+            <img src="asset/Footer/footer-03.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-04.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-05.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-06.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-07.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-08.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-09.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-10.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-11.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+        </div>
+    </div>
+    <p>©2017 - 2018 Amcex. All rights reserved</p>
+</footer>
 <!-- =============== VENDOR SCRIPTS ===============-->
 <!-- DATATABLE-->
 <script src="/vendor/datatables-colvis/js/dataTables.colVis.js"></script>
