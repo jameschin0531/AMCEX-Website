@@ -37,28 +37,15 @@
                 <!-- START Nav wrapper -->
                 <div class="nav-wrapper">
                     <!-- START Left navbar -->
-
+        
                     <ul class="nav navbar-nav">
                         <li>
                             <div class="brand-logo">
-                                <img class="img-responsive" src="logo.png" alt="App Logo" />
+                                <img class="img-responsive" src="asset/Logo/logo-01.png" style="height:30px;width:80x; margin: 10px"
+                                    alt="App Logo" />
                             </div>
                         </li>
-                        <li>
-                            <!--
-                  Button used to collapse the left sidebar. Only visible on tablet and desktops
-                -->
-                            <a class="hidden-xs" href="#" data-trigger-resize="" data-toggle-state="aside-collapsed">
-                                <em class="fa fa-navicon"></em>
-                            </a>
-                            <!--
-                  Button to show/hide the sidebar on mobile. Visible on mobile only.
-                -->
-                            <a class="visible-xs sidebar-toggle" href="#" data-toggle-state="aside-toggled"
-                                data-no-persist="true">
-                                <em class="fa fa-navicon"></em>
-                            </a>
-                        </li>
+        
                         <li><a href="#">Exchange</a></li>
                     </ul>
                     <!-- END Left navbar -->
@@ -71,24 +58,24 @@
                             </a>
                         </li>
                         <!-- Fullscreen (only desktops) -->
-                        <li class="visible-lg">
+                        <li>
                             <a href="#">
                                 <p>Orders</p>
                             </a>
                         </li>
-                        <li class="visible-lg">
+                        <li>
                             <a href="#">
                                 <p>Orders</p>
                             </a>
                         </li>
-                        <li class="visible-lg">
+                        <li>
                             <a href="#">
                                 <p>Join Us</p>
                             </a>
                         </li>
-                        <li class="visible-lg">
+                        <li>
                             <a href="#">
-                                <p>Support A</p>
+                                <p>Support</p>
                             </a>
                         </li>
                         <!-- START Alert menu -->
@@ -112,124 +99,138 @@
             </nav>
             <!-- END Top Navbar -->
         </header>
-        <p></p>
-
 
         <div class="col-lg-12">
             <label style="font-size: 3vh">Trade History</label>
-
             <br />
             <br />
 
-            <div class="panel panel-default">
-
-                <div class="panel-body">
-                    <div class="table-responsive">
-                        <div id="datatable3_wrapper" class="dataTables_wrapper form-inline dt-bootstrap" style="height: 100%">
-
-                            <div class="form-group">
-                                <div class="box">
-                                    <label class="control-label">Date:</label>
-
-                                    <div class='input-group date' id='datetimepicker1'>
-                                        <input type='text' class="form-control" />
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                                        </span>
-                                    </div>
-                                    <label class="control-label"> to </label>
-
-                                    <div class='input-group date' id='datetimepicker2'>
-                                        <input type='text' class="form-control" />
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                                        </span>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="form-group">
-                                <div class="box">
-                                    <label class="control-label">Pair:</label>
-                                    <input type="text" class="form-control" name="lname" id="lname" placeholder="Coin">
-
-                                    <label class="control-label"> or </label>
-
-                                    <select class="form-control" id="sel1">
-                                        <option>All</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <div class="box">
-
-                                    <label class="control-label"> Side: </label>
-
-                                    <select class="form-control" id="sel1">
-                                        <option>All</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
-                                </div>
-
-                            </div>
-
-                            <div class="form-group">
-                                <div class="box">
-                                    <button type="button" class="btn btn-warning">Search</button>
-                                    <button type="button" class="btn btn-default">Reset</button>
-
-                                </div>
-                            </div>
-                            <div class="box" style="float: right">
-                                <label class="control-label"><a href="#" style="color: black"><u>Export
-                                            Complete Trade History</u></a></label>
-                                <a href="#"><img src="asset\15. Trade history\trade history elements-07.png" alt="Export"
-                                        style="width:20px;height:20px;"></a>
-
+            <div  style="border:none !important">
+                <div class="col-lg-9">
+                    <div class="trade-h-label">
+                    
+                        <div class="box">
+                            <label class="control-label">Date:</label>
+                        </div>
+                        <div class="box">
+                            <div class='input-group date' id='datetimepicker1' >
+                                <input type='text' class="form-control " />
+                                <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
                             </div>
                         </div>
-                        <br />
 
+                        <div class="box">
+                            <label class="control-label"> to </label>
+                        </div>
+                        <div class="box">
+                            <div class='input-group date' id='datetimepicker2'>
+                                <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div>
+                        </div>
+                   
+                        <div class="box">
+                            <label class="control-label">Pair:</label>
+                        </div>
+                        <div class="box">
+                            <input type="text" class="form-control" name="lname" id="lname" placeholder="Coin">
+                        </div>
+                        <div class="box">
+                            <label class="control-label"> or </label>
+                        </div>
+                        <div class="box">
+                            <select class="form-control" id="sel1">
+                                <option>All</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                   
+                        <div class="box">
+                            <label class="control-label"> Side: </label>
+                        </div>
+                        <div class="box">
+                            <select class="form-control" id="sel1">
+                                <option>All</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+                   
 
-                        <!-- START table-responsive-->
-                        <div class="table-responsive">
-                            <table class="table limittable" style="border: 2px solid #EED2A7">
-                                <thead style="background-color: #F3F3F3">
-                                    <tr>
-                                        <th>Date</th>
-                                        <th>Pair</th>
-                                        <th>Type</th>
-                                        <th>Type</th>
-                                        <th>Filled</th>
-                                        <th>Fee</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-
-                            </table>
-                        </div> 
-
-                            <div class="NoRecordFoundDIV">
-                                <img src="asset\15. Trade history\trade history elements-08.png" alt="Export"
-                                    style="width:80px;height:80px">
-                                <p><label style="color: grey">You have no trade history</label> </p>
-                            </div>  
-
+                   
+                        <div class="box">
+                            <button type="button" class="btn btn-warning no-r">Search</button>
+                        </div>
+                        <div class="box">
+                            <button type="button" class="btn btn-default">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="box" style="float:right" >
+                        <label class="control-label"><a href="#" style="color: #595959;"><u>ExportComplete Trade History</u></a>
+                        </label>
+                        <a href="#"><img src="asset\15. Trade history\trade history elements-07.png" alt="Export"style="width:20px;height:20px;"></a>
                     </div>
                 </div>
             </div>
+                <br />
+
+                    <!-- START table-responsive-->
+                <div >
+                    <table class="table limittable" style="border: 2px solid #EED2A7">
+                        <thead style="background-color: #F3F3F3">
+                            <tr>
+                                <th>Date</th>
+                                <th>Pair</th>
+                                <th>Type</th>
+                                <th>Type</th>
+                                <th>Filled</th>
+                                <th>Fee</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div> 
+
+                <div class="NoRecordFoundDIV">
+                    <img src="asset\15. Trade history\trade history elements-08.png" alt="Export"
+                    style="width:80px;height:80px">
+                    <p><label style="color: grey">You have no trade history</label> </p>
+                </div>  
+            </div>
         </div>
     </div>
-    </div>
+  
 </body>
 
-
+<footer>
+    <div class="row" style="border-bottom:2px solid #3a3a3c;">
+        <div style="float:left" class="sociallink">
+            <a>About</a> <a>Terms</a> <a>Privacy</a> <a>Fees</a> <a>Contact</a>
+            <a>API</a> <a>Appy to List</a> <a>Download</a>
+        </div>
+        <div style="float:right">
+            <img src="asset/Footer/footer-03.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-04.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-05.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-06.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-07.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-08.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-09.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-10.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+            <img src="asset/Footer/footer-11.png" style="height:20px;width:20x; margin: 10px" alt="App Logo" />
+        </div>
+    </div>
+    <p>©2017 - 2018 Amcex. All rights reserved</p>
+</footer>
 <!-- =============== VENDOR SCRIPTS ===============-->
 <!-- DATATABLE-->
 <script src="/vendor/datatables-colvis/js/dataTables.colVis.js"></script>

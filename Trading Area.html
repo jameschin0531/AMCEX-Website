@@ -323,7 +323,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-3" style="margin-bottom: 20px;">
             <div class="gold-frame">
                 <div class="tab grey-back
                 ">
@@ -480,64 +480,187 @@
                     <h4 style="float:left">VIP</h4>
                     <p  style="float:right; margin-top:10px">Fee: Taker (xxxx)/Maker(xxxxx)</p>
                 </div>
-                <div class="gold-frame">
+                <div class="gold-frame" style="overflow: hidden">
                         <div class="tab grey-back
                         ">
                                 <button
-                                  class="tablinks b"
+                                  class="tablinks1 b"
                                   onclick="openVIP(event, 'a')"
                                   id="defaultOpen"
                                 >
                                   Limit
                                 </button>
-                                <button class="tablinks b" onclick="openVIP(event, 'b')">
+                                <button class="tablinks1 b" onclick="openVIP(event, 'b')">
                                   Market
                                 </button>
-                                <button class="tablinks b" onclick="openVIP(event, 'c')">
+                                <button class="tablinks1 b" onclick="openVIP(event, 'c')">
                                     Stop-Limit
                                 </button>
                              
                         </div>
                       
                               <!-- Tab content -->
-                        <div id="a" class="tabcontent gold-frame">
-                           <form class="form-horizontal">
+                        <div id="a" class="tabcontent1  padding-20">
+                           <form class="form-horizontal ">
+                            <div class="form-group">
+                              <label class="col-lg-4 control-label">Buy XRP</label>
+                              <div class="col-lg-8">
+                                <label class="col-lg-8 control-label" style="float:right">xxxxxxx-BTC</label>
+                              </div>
+                            </div>
                            <div class="form-group">
-                              <label class="col-lg-2 control-label">Email</label>
-                              <div class="col-lg-10">
-                                 <input class="form-control" type="email" placeholder="Email">
+                              <label class="col-lg-4 control-label">Price: </label>
+                              <div class="col-lg-8">
+                                 <input  placeholder="BTC" class="buy-form-input">
                               </div>
                            </div>
                            <div class="form-group">
-                              <label class="col-lg-2 control-label">Password</label>
-                              <div class="col-lg-10">
-                                 <input class="form-control" type="password" placeholder="Password">
+                              <label class="col-lg-4 control-label">Amount: </label>
+                              <div class="col-lg-8">
+                                 <input placeholder="XRP" class="buy-form-input">
+                              </div>
+                           </div>
+                          <div class="form-group">
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-8">
+                            <div class="col-lg-3 padding-lr-5">
+                              <input  placeholder="xxx" class="xxx">
+                            </div>
+                            <div class="col-lg-3 padding-lr-5">
+                              <input placeholder="xxx" class="xxx">
+                            </div>
+                            <div class="col-lg-3 padding-lr-5">
+                              <input placeholder="xxx" class="xxx">
+                            </div>
+                            <div class="col-lg-3 padding-lr-5">
+                              <input placeholder="xxx" class="xxx">
+                            </div>    
+                            </div>
+                          </div>
+                           <div class="form-group">
+                              <label class="col-lg-4 control-label">Total: </label>
+                              <div class="col-lg-8">
+                                <input placeholder="BTC" class="buy-form-input">
                               </div>
                            </div>
                            <div class="form-group">
-                              <div class="col-lg-offset-2 col-lg-10">
-                                 <div class="checkbox c-checkbox">
-                                    <label>
-                                       <input type="checkbox" checked="">
-                                       <span class="fa fa-check"></span>Remember me</label>
-                                 </div>
+                              <div class="col-lg-12">
+                                 <button class="btn green-back white buy-form-input" type="submit">Buy XRP</button>
                               </div>
                            </div>
-                           <div class="form-group">
-                              <div class="col-lg-offset-2 col-lg-10">
-                                 <button class="btn btn-sm btn-default" type="submit">Sign in</button>
+                        </form>
+
+                        <!-- =============== SELL XRP =============== -->
+                        <form class="form-horizontal ">
+                          <div class="form-group">
+                            <label class="col-lg-4 control-label">Sell XRP</label>
+                            <div class="col-lg-8">
+                              <label class="col-lg-8 control-label" style="float:right">xxxxxxx-XRP</label>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-4 control-label">Price: </label>
+                            <div class="col-lg-8">
+                              <input placeholder="BTC" class="buy-form-input">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-4 control-label">Amount: </label>
+                            <div class="col-lg-8">
+                              <input placeholder="XRP" class="buy-form-input">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-lg-4"></div>
+                            <div class="col-lg-8">
+                              <div class="col-lg-3 padding-lr-5">
+                                <input placeholder="xxx" class="xxx">
                               </div>
-                           </div>
-                        </form>    
+                              <div class="col-lg-3 padding-lr-5">
+                                <input placeholder="xxx" class="xxx">
+                              </div>
+                              <div class="col-lg-3 padding-lr-5">
+                                <input placeholder="xxx" class="xxx">
+                              </div>
+                              <div class="col-lg-3 padding-lr-5">
+                                <input placeholder="xxx" class="xxx">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-lg-4 control-label">Total: </label>
+                            <div class="col-lg-8">
+                              <input placeholder="BTC" class="buy-form-input">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-lg-12">
+                              <button class="btn red-back white buy-form-input" type="submit">Sell XRP</button>
+                            </div>
+                          </div>
+                        </form>
+                          
                         </div>
                       
-                        <div id="b" class="tabcontent gold-frame">
+                        <div id="b" class="tabcontent1 ">
                                 
                         </div>
                       
-                        <div id="c" class="tabcontent gold-frame">
+                        <div id="c" class="tabcontent1 ">
                                
                         </div>
+                </div>
+
+                <!-------------last------------->
+                <div class="col-lg-12">
+                  <h4 style="float:left">Trade History</h4>
+                  <div class="tab">
+                    <button class="tablinks2 a" onclick="openHistory(event, '1')" style="float:right">
+                      Market
+                    </button>
+                    <button class="tablinks2 a" onclick="openHistory(event, '2')" style="float:right">
+                      Yours
+                    </button>
+                    </div>
+                  </div>
+                <div class="gold-frame">
+                  <!-- Tab content -->
+                  <div id="1" class="tabcontent2 gold-frame">
+                    <div class="table-responsive table-bordered">
+                      <table class="table">    
+                        <tbody>
+                          <tr>
+                            <td>xxxxxx</td>
+                            <td><span class="red">xxxxxx</span></td>
+                            <td><span class="green">xxxx</span></td>
+                          </tr>
+                          <tr>
+                            <td>xxxxxx</td>
+                            <td><span class="red">xxxxxx</span></td>
+                            <td><span class="green">xxxx</span></td>
+                          </tr>
+                          <tr>
+                            <td>xxxxxx</td>
+                            <td><span class="red">xxxxxx</span></td>
+                            <td><span class="green">xxxx</span></td>
+                          </tr>
+                          <tr>
+                            <td>xxxxxx</td>
+                            <td><span class="red">xxxxxx</span></td>
+                            <td><span class="green">xxxx</span></td>
+                          </tr>
+                          <tr>
+                            <td>xxxxxx</td>
+                            <td><span class="red">xxxxxx</span></td>
+                            <td><span class="green">xxxx</span></td>
+                          </tr>
+                
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                
+                 
                 </div>
             </div>
 
@@ -735,22 +858,47 @@
           evt.currentTarget.className += " active";
         }
       </script>
+      
       <script>
         document.getElementById("defaultOpen").click();
       </script>
+
+      <script>
+        function openHistory(evt, name) {
+          // Declare all variables
+          var i, tabcontent, tablinks;
+
+          // Get all elements with class="tabcontent" and hide them
+          tabcontent = document.getElementsByClassName("tabcontent2");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+
+          // Get all elements with class="tablinks" and remove the class "active"
+          tablinks = document.getElementsByClassName("tablinks2");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+
+          // Show the current tab, and add an "active" class to the button that opened the tab
+          document.getElementById(name).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+      </script>
+
       <script>
             function openVIP(evt, cityName) {
               // Declare all variables
               var i, tabcontent, tablinks;
       
               // Get all elements with class="tabcontent" and hide them
-              tabcontent = document.getElementsByClassName("tabcontent");
+              tabcontent = document.getElementsByClassName("tabcontent1");
               for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
               }
       
               // Get all elements with class="tablinks" and remove the class "active"
-              tablinks = document.getElementsByClassName("tablinks");
+              tablinks = document.getElementsByClassName("tablinks1");
               for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
               }
