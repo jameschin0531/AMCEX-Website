@@ -211,6 +211,34 @@ a {
   margin: 20px 0;
 }
 
+.dropdown-a
+{
+  margin:20px 0;
+  padding:10px;
+  background:#f3f3f3;
+  width:100%;
+  border:2px solid #ECEDEC;
+
+}
+
+.dropdown-b
+{
+  margin:10px 0;
+  padding:8px;
+  background:#fff;
+  width:100%;
+  border:2px solid #ECEDEC;
+
+}
+
+@media only screen and (min-width: 768px){
+  .margin-lfa{
+  margin-left:100px;
+}
+.margin-lf{
+  margin:  0 20px;
+}
+}
 .margin-small{
   margin: 5px 0;
 }
