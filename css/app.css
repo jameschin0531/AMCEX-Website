@@ -102,6 +102,10 @@ p,h1,h2,h3,h4,h5,a,li,td{
   font-family: "myFont" !important;
 }
 
+.overflow
+{
+  overflow: auto;
+}
 body{
   font-family: "myFont" !important;
 }
