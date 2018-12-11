@@ -102,6 +102,13 @@ p,h1,h2,h3,h4,h5,a,li,td{
   font-family: "myFont" !important;
 }
 
+
+@media only screen and (max-width: 767px){
+  .small-screen
+  {
+    padding:0;
+  }
+}
 .overflow
 {
   overflow: auto;

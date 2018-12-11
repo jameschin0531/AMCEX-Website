@@ -109,7 +109,7 @@
       <div class="content-wrapper">
         <!-- Page content -->
 
-        <div class="col-lg-9">
+        <div class="col-lg-9 small-screen">
           <div class="col-lg-12 trade-title">
             <div class="title-item">
               <h4>BTC<span class="grey">/USD</span></h4>
@@ -291,7 +291,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-8">
+          <div class="col-lg-8 ">
             <div class="gold-frame"><div id="myDiv"></div></div>
             <div>
               <h3>Open Order (<span class="gold">0</span>)</h3>
@@ -323,7 +323,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-3" style="margin-bottom: 20px;">
+        <div class="col-lg-3 small-screen" style="margin-bottom: 20px;">
             <div class="gold-frame">
                 <div class="tab grey-back
                 ">
@@ -768,6 +768,7 @@
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
     <script>
+
       Plotly.d3.csv(
         "https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv",
         function(err, rows) {
@@ -796,44 +797,48 @@
           var data = [trace];
 
           var layout = {
-            dragmode: "zoom",
+            dragmode: 'zoom',
+            margin: {
+              r: 10,
+              t: 25,
+              b: 40,
+              l: 25
+            },
             showlegend: false,
             xaxis: {
               autorange: true,
-              title: "Date",
-              rangeselector: {
-                x: 0,
-                y: 1.2,
-                xanchor: "left",
-                font: { size: 8 },
-                buttons: [
-                  {
-                    step: "month",
-                    stepmode: "backward",
-                    count: 1,
-                    label: "1 month"
-                  },
-                  {
-                    step: "month",
-                    stepmode: "backward",
-                    count: 6,
-                    label: "6 months"
-                  },
-                  {
-                    step: "all",
-                    label: "All dates"
-                  }
-                ]
-              }
+              rangeslider: { range: ['2017-01-17 12:00', '2017-02-10 12:00'] },
+              title: 'Date',
+              type: 'date'
             },
             yaxis: {
-              autorange: true
-            }
-          };
+              autorange: true,
+              type: 'linear'
+            },
+           
+            shapes: [
+              {
+                type: 'rect',
+                xref: 'x',
+                yref: 'paper',
+                x0: '2017-01-31',
+                y0: 0,
+                x1: '2017-02-01',
+                y1: 1,
+                fillcolor: '#d3d3d3',
+                opacity: 0.2,
+                line: {
+                  width: 0
+                }
+              }
+            ]
+          }
 
           Plotly.plot("myDiv", data, layout);
         }
       );
+
+      
     </script>
 
 <script>
